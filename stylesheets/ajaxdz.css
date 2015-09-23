@@ -1,0 +1,33 @@
+
+.b-calc {
+	background: rgba(0, 128, 255, 0.3) none repeat scroll 0 0;
+	box-shadow: 0 2px 4px rgb(0, 128, 255);
+	height: 350px;
+	margin: 50px auto;
+	padding: 5px;
+	width: 300px;
+}
+.b-calc__square,
+.b-calc__thickness,
+.b-calc__type,
+.b-calc__result  {
+	border: 0 none;
+	display: block;
+	font-size: 16px;
+	margin: 20px auto;
+	outline: 0 none;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+.b-calc__count {
+	display: block;
+	height: 40px;
+	margin: 10px auto;
+	width: 120px;
+}
+.b-calc__result {
+	background: #fff;
+	height: 25px;
+	width: 50px;
+}
