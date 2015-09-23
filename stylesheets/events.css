@@ -1,0 +1,70 @@
+
+.b-pad {
+	background: #90ee90 none repeat scroll 0 0;
+	height: 555px;
+	left: 200px;
+	position: absolute;
+	top: 100px;
+	width: 555px;
+}
+.b-pad__coord {
+	background: #ffffff none repeat scroll 0 0;
+	display: inline-block;
+	height: 1em;
+	margin: 5px;
+	width: 255px;
+}
+.b-menu {
+	background: #e15e4b none repeat scroll 0 0;
+	border: 5px dashed;
+	width: 100px;
+}
+.b-menu__list {
+}
+.b-menu__item:hover {
+	background: #c22a1e none repeat scroll 0 0;
+}
+.b-menu__link {
+	color: #ffffff;
+	display: block;
+	padding: 10px 5px;
+	text-align: center;
+}
+.b-menu__list, .b-context-menu__list {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+.b-context-menu {
+	background: #ffffff none repeat scroll 0 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+	display: none;
+	font-family: arial;
+	font-weight: 600;
+	left: 0;
+	padding: 10px 0;
+	position: absolute;
+	top: 0;
+	width: 150px;
+}
+.b-context-menu_active {
+	display: block;
+}
+.b-context-menu__list {
+}
+.b-context-menu__item {
+}
+.b-context-menu__link {
+	color: #0000ff;
+	display: block;
+	padding: 5px;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.b-context-menu__link:hover {
+	background: #4766A0;
+	color: #fff;
+}

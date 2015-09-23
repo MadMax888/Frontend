@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clocks, Countdown, Stopwatch</title>
+	<link rel="stylesheet" href="../stylesheets/countdown.css">
+	<link href='https://fonts.googleapis.com/css?family=Orbitron:700,500,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper__clock">
+			<div id="clock" class="b-clock">
+				<div class="b-clock__title">
+					<h1 class="b-title">Clock</h1>
+				</div>
+				<div class="b-clock__digits">
+					<div class="b-digits">
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<span class="b-digits__delimeter">:</span>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<span class="b-digits__delimeter">:</span>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper__countdown">
+			<div class="b-countdown">
+				<div class="b-countdown__title">
+					<h1 class="b-title">countdown</h1>
+				</div>
+				<div class="b-countdown__digits">
+					<div class="b-digits">
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<span class="b-digits__delimeter">:</span>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<span class="b-digits__delimeter">:</span>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper__stopwatch">
+			<div class="b-stopwatch">
+				<div class="b-stopwatch__title">
+					<h1 class="b-title">stopwatch</h1>
+				</div>
+				<div class="b-clock__digits">
+					<div class="b-digits">
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<span class="b-digits__delimeter">:</span>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<span class="b-digits__delimeter">:</span>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+						<div class="b-digits__position"><span class="b-digit">0</span></div>
+					</div>
+				</div>
+				<button id="start" class="b-stopwatch__btn b-button">Start</button>
+				<button id="stop" class="b-stopwatch__btn b-button">stop</button>
+				<button id="pause" class="b-stopwatch__btn b-button">pause</button> 
+			</div>
+		</div>
+	</div>
+	<script type='text/javascript' src='../scripts/jquery-2.1.4.min.js'></script>
+	<script type='text/javascript' src='../scripts/component.js'></script>	
+	<script type='text/javascript' src='../scripts/countdown.js'></script>
+	<script>
+		var c1 = new b_clock ("#clock");
+		// ,	c2 =
+		// ,	c3 =
+	</script>	
+</body>
+</html>

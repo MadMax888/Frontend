@@ -1,0 +1,83 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #cccccc none repeat scroll 0 0;
+	font: 100%/1.5em "Orbitron",sans-serif;
+}
+.wrapper {
+	background: #ffffff none repeat scroll 0 0;
+	border: 2px solid #ffffff;
+	box-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+	height: auto;
+	margin: 50px auto;
+	width: 768px;
+}
+.wrapper__clock {
+}
+.b-clock, .b-countdown, .b-stopwatch {
+	font-size: 0;
+}
+.b-clock__title, .b-clock__digits, .b-countdown__title, .b-countdown__digits, .b-stopwatch__title, .b-stopwatch__digits {
+	display: inline-block;
+	padding: 0 15px;
+	vertical-align: top;
+	width: 50%;
+}
+.b-title {
+	font-size: 2.5rem;
+	letter-spacing: 0.1em;
+	text-align: right;
+	text-transform: uppercase;
+}
+.b-clock__digits {
+}
+.b-digits__position {
+	display: inline-block;
+}
+.b-digits {
+	font-size: 2.5rem;
+	margin: 25px 0;
+	text-align: center;
+}
+.b-digit {
+	background: #000000 none repeat scroll 0 0;
+	border: 1px solid;
+	border-radius: 5px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.8) inset;
+	color: #ffffff;
+	padding: 3px;
+}
+.b-digits__delimeter {
+}
+.wrapper__countdown {
+}
+.b-countdown {
+}
+.b-countdown__title {
+}
+.b-countdown__digits {
+}
+.wrapper__stopwatch {
+}
+.b-stopwatch {
+}
+.b-stopwatch__title {
+}
+.b-stopwatch__digits {
+}
+.b-stopwatch__btn {
+	display: inline-block;
+	margin: 10px 20px;
+	position: relative;
+	right: -50%;
+}
+.b-button {
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	outline: 0 none;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}

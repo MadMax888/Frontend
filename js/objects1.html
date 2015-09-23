@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Objects</title>
+	</head>
+	
+	<body>
+	</body>
+	<script>
+	function person(sName){
+		var p = this;
+		
+		p.name 		= sName;
+		p.surname 	= '';
+		
+		p.greeting 	= function(){
+			// var p = ...;
+			console.log('Hello, ' + p.name);
+			}
+		}
+		
+	var person1 = new person('Jack'); 
+
+	
+	//person1.name 	= 'Jack';
+	person1.surname = 'Smith';
+	
+	person1.greeting();
+	
+	var alphabet = ['b', 'c', 'd', 'z']
+		, result = null 
+		,x = [1, 92, 3]
+		,y = [4, 5, 6]
+		;
+	
+	result = alphabet.pop();			// ->
+	result = alphabet.push('e');		// <-
+	result = alphabet.unshift('z');		// <-
+	result = alphabet.shift();			// ->
+	result = alphabet.unshift('a');		// <-
+	
+	result = x.reverse();
+	result = x.sort();
+	result = x.slice(1,3);				// 3 конечный индекс до которого берётся фрагмент
+	result = x.splice(1,1);				// ,1 - это количество элементов которые вырезаются
+	x.splice(1, 0, 3);
+	result = x.concat(y);
+	result = x.join('.');
+	result = x.indexOf(92);
+	
+	var myStringVar = "Hello. Mike. Mary and";
+	
+	result = myStringVar.match(/M[a-z]+/gi);	// поиск соответствий "формуле" (регулярному выражению) в пределах строки ((g)lobal, case (i)nsensitive - регистронезависимость)
+	result = myStringVar.replace(/M/g, 'T');
+	result = myStringVar.search(/\./g);
+	result = myStringVar.slice(7, 11);
+	result = myStringVar.split('. ');
+	result = myStringVar.substr(7, 4);
+	result = myStringVar.toLowerCase();
+	result = myStringVar.toUpperCase();
+	
+	var captchaOk 		= false
+		, userEntry 	= "TeST"
+		, captchaText 	= "test"
+		;
+	if (userEntry.toLowerCase() == captchaText){
+		captchaOk = true;
+		}
+	captchaOk = userEntry.toLowerCase() == captchaText	
+		? true
+		: false;
+	
+	captchaOk = userEntry.toLowerCase() == captchaText;	
+	
+	var browser = navigator.userAgent;
+	
+	if (browser.indexOf('Firefox') != -1){
+		//alert('Red fat fox!');
+		}
+		
+	var carPlate= 'AA 1234 BB';
+	// var carPlate= 'КВ 12345';
+	// var carPlate= 'КА 123-45';
+	console.log(carPlate.substr(0,2));
+	
+	var stringA = "Building C";
+	var bldgLetter = stringA.charAt(9);
+	
+	var 
+		firstSpace 	= carPlate.indexOf(' ')
+		,lastSpace 	= carPlate.lastIndexOf(' ')
+		,end 		= lastSpace!=firstSpace ? lastSpace : carPlate.length
+		;
+	console.log(carPlate.slice(firstSpace+1, end));
+	
+	console.log(carPlate.split(' ')[1]);
+
+	var now = new Date();
+	
+	console.log(now.getTime());
+	console.log(now.setDate(now.getDate()+7));
+	
+	var today = new Date();
+	var nowTimestamp = today.getTime();
+	console.log(new Date(nowTimestamp + ( 60 * 60 * 24 * 7 * 1000)));
+	console.log(today.setTime(nowTimestamp + ( 60 * 60 * 24 * 7 * 1000)));
+
+	//Вывести строку наоборот
+	// prototype
+	/*
+	alert
+	Math.floor(23.4)
+	
+	23
+Math.ceil(23.4)
+	
+	24
+Math.toFixed(23.4567, 2)
+	
+	TypeError: Math.toFixed is not a function
+var x = 23.4567
+	
+	undefined
+x.toFixed(2)
+	
+	"23.46"
+Math.round(23.4567)
+	
+	23
+Math.min(1,2,3,4)
+	
+	1
+Math.min([1,2,3,45])
+	
+	NaN
+Math.floor( Math.random() * (n - m + 1) ) + m
+	
+	4
+var m = 1
+	
+	undefined
+var n = 10
+	
+	undefined
+	*/
+	
+	
+	
+	
+	
+	
+	
+		
+
+		
+	</script>
+</html>

@@ -1,0 +1,6 @@
+.b-calc_status_error .b-calc__count {
+background: red;	
+}
+.b-calc_status_ok .b-calc__count {
+    background: green none repeat scroll 0 0;
+}

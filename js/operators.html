@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Operators</title>
+	</head>
+	
+	<body>
+	</body>
+	<script>
+		var x = 18, y = 5;
+
+		x++;
+		
+		y = x++ - 8;
+		
+		x += 3;
+		x -= 3;
+		x *= 3;
+		x--;
+		x /= 3;
+		x %= 3;
+		
+		var city 		= 'Kyiv'
+			, weather 	= 'fine'
+			, isMinsk	= city == 'Minsk'
+			, salutation= 'Hello, '
+			, name		= 'Jack'
+			, country	= ''
+			;
+			
+		// salutation + name;
+		   salutation += name;
+		console.log('Is city Minsk? ' 			+ isMinsk );
+		console.log('Okay, is it not Minsk? ' 	+ !isMinsk );
+		console.log('Okay, what is it? ' 		+ city );
+		console.log('Weather: ' 				+ (weather == 'fine') );
+		console.log('All: ' 					+ (city == 'Minsk' || weather == 'fine') );
+		
+		country =  city == 'Kyiv' 
+			? 'Ukraine' 
+			: 'other';
+		
+		
+
+		
+	</script>
+</html>
