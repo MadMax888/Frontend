@@ -12,6 +12,4 @@ $types = Array(
 
 $price = $square * $thickness * $types[$type];
  
- 
-
-?>{"price":"<?= $price?>","insulationCoef":"<?= $types[$type]?>"}
+?>

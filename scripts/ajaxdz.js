@@ -27,18 +27,18 @@ function ajaxDz (sSelector) {
 		
 		c.oAjax = $.ajax({
 
-				 'url' 		: 'insulationcalc.php?t-' + new Date().getTime() // чтоб каждый раз нов файл (запрет кеша)
-				,'method'	: 'POST'
+				 'url' 		: 'ajaxinsulationcalc.php?t-' + new Date().getTime() // чтоб каждый раз нов файл (запрет кеша)
+				,'method'	: 'GET'
 				,'dataType' : 'json'
 				,'timeout'  : 100 // макс. врем обработки запроса
 				,'data' 	: {
-					 'square' 	 : c.square.val()       // a,b про эти парам сообщают бєкендеры
+					 'square' 	 : c.square.val()       // a,b (square, thickness, type) про эти парам сообщают бєкендеры
 					,'thickness' : c.thickness.val()
 					,'type'	 	 : c.type.val()
 					}
 				, 'success' : function (oServerResponse) { // Для бизнес логики
 					// debugger; // ключевое слово для брекпоинта
-					c.result.html(oServerResponse.result);
+					c.result.html(oServerResponse.price);// ???
 					}
 				, 'error'   : function (oAjax) {
 					alert('Проблемы с расчетами, повторите попытку позже');
