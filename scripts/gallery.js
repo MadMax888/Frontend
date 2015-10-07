@@ -36,8 +36,8 @@ function b_gallery(sSelector){
 			console.log("toEnd");
 			}
 		else {
-			var jqPicture = g.pictures.eq(g.current);
-			var jqImage = jqPicture.find(".b-picture__image")
+			var jqPicture    = g.pictures.eq(g.current);
+			var jqImage      = jqPicture.find(".b-picture__image")
 			var sBigImageSrc = jqImage.attr("src").replace("small_","");		//alert(sBigImageSrc);
 			g.previewImage.attr('src', sBigImageSrc);		// записали sBigImageSrc
 			

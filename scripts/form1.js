@@ -42,6 +42,8 @@ function b_form(sSelector){
 	f.val = function (sSelector){
 		var jqField = f.form.find(sSelector); // jqField - обьект колекция
 		var sFieldValue = ''; // значение поля - то, что возвращает функцию
+
+			
 		if (jqField.attr('type') == 'checkbox') { // Если поле - флажок
 				jqField.each(
 				function (){
@@ -51,6 +53,9 @@ function b_form(sSelector){
 						+ jqCheckbox.val();
 					}
 				);
+			}
+		else if (jqField.prop('tagName') == 'SELECT') {			 // если поле имеет имя тега == выпадающий список 
+			sFieldValue = jqField.find('option:selected').val(); // сохраним в переменную вот что: в поле найти выбранную опцию и возьмом ее значение  
 			}
 		else { // Если полу не флажок
 				sFieldValue = jqField.val();
@@ -63,3 +68,19 @@ function b_form(sSelector){
 	// при нажатии на кнопку ОК - показать информацию
 	f.form.find('.b-form__ok-button').click(f.showInfo);
 	}
+
+
+
+	MadMax (10:42):
+	c.copyData = function(aElementsList, jqSource, jqDestination){
+
+		for( var i = 0; i < aElementsList.length; i++ ) {
+			if ( aElementsList[i] == '.b-good__image' ) {
+				jqDestination.find(aElementsList[i]).attr( "src", jqSource.find(aElementsList[i]).attr("src") );
+				}
+			else { 
+				jqDestination.find(aElementsList[i]).html( 		jqSource.find(aElementsList[i]).html() );
+				}
+			
+			}
+		}

@@ -17,6 +17,7 @@
     border-radius: 0 0 5px 5px;
     display: inline-block;
     padding: 3px;
+    cursor: pointer;
 }
 .b-minicart__order {
 }

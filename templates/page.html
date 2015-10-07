@@ -1,0 +1,39 @@
+<html>
+	<?
+		dbg($myFriend);
+	?>
+	<h1>HEllo, <?= $myFriend->name?> ! </h1>
+
+	<? $myFriend->hello()?>
+	<?= $myFriend->goodBye()?>
+
+
+	<?
+	foreach ($people as $name => $address){
+	?>
+		<div class='b-header'>
+			<?include('header.html') ?>
+		</div>
+
+	<?	
+	}
+	?>
+
+	<?
+	foreach ($items_list as $myId => $item) {
+	?>
+		<ul>
+			<li>
+				<a href="item.php?id=<?=$myId?>" >
+					<?= $item['no']?>:<?= $item['label']?>
+				</a>
+			</li>
+		</ul>
+	<?
+	}
+	?>
+	
+	<br><?= realpath('/') ?>
+	<br><?= realpath('./') ?>
+	<br><a href='/'>site root</a> is located in <?= $_SERVER['DOCUMENT_ROOT']?>
+</html>

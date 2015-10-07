@@ -35,7 +35,7 @@ header("Content-Type: text/html;charset=UTF-8");
 					</td>
 					<td class='b-good__delete-td'>
 						<a href='#link-to-delete-good' class='b-good__delete'>
-							<img src='/f2-2/images/delete_icon.png' class='b-good__delete-icon'>
+							<img src='../images/delete_icon.png' class='b-good__delete-icon'>
 						</a>
 					</td>
 				</tr>
@@ -115,10 +115,11 @@ header("Content-Type: text/html;charset=UTF-8");
 	<script type='text/javascript' src='../scripts/settings.js'></script>
 	<script type='text/javascript' src='../scripts/init_settings.js'></script>
 	<script type='text/javascript' src='../scripts/component.js'></script>
-	<script type='text/javascript' src='../scripts/jquery.cookie.js'></script>
+	<script type='text/javascript' src='../scripts/jquery.cookie.js'></script> 
 	<script type='text/javascript' src='../scripts/cart.js'></script>
 	
 	<script>
 		var c1 = new cart('#goods1', '#minicart1');
+		var a1 = new ajaxRequest('#goods1');	
 	</script>
 </html>
