@@ -21,8 +21,8 @@ header("Content-Type: text/html;charset=UTF-8");
 			<input type='submit' value='=' 	class='b-calc__count'>
 			<span 							class='b-calc__result'><?= $result?></span>
 		</form>
-	
-	
+	<h1>d</h1>	
+	<p>dfsdfsd</p>
 		
 	</body>
 	<script type='text/javascript' src='../scripts/component.js'></script>
